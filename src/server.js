@@ -5,7 +5,7 @@ const blog = require('./blog'); // importăm din /blog.js
 const populate = require('./populateDb');
 
 const app = express();
-const port = 3001; // configurăm portul pe care va rula aplicația: localhost:3000
+const port = 3000; // configurăm portul pe care va rula aplicația: localhost:3000
 
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public'))); // aici vom ține fișierele statice pentru blog
