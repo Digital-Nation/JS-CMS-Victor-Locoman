@@ -1,0 +1,20 @@
+{
+  "name": "cms",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/server",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Digital-Nation/JS-CMS-Victor-Locoman.git"
+  },
+  "author": "Victor Locoman [victor.locoman@digitalnation.ro]",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
+}
