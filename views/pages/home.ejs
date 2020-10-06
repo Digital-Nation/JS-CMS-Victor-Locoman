@@ -1,4 +1,6 @@
-<%- include('../partials/header') %>
-<h2><%= posts[0].title %></h2>
-<p><%= posts[0].content %></p>
-<%- include('../partials/footer') %>
+<%- include('../partials/header') %> <% for (let post of posts){ %>
+<div>
+  <h2><%= post.title %></h2>
+  <p><%= post.content %></p>
+</div>
+<%}%> <%- include('../partials/footer') %>
