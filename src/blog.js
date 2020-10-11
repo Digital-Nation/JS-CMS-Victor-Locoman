@@ -1,8 +1,9 @@
 const express = require('express');
 const db = require('./db');
-
+const api = require('./admin/api')
 const router = express.Router();
 
+// @todo: completează cu toate rutele necesare
 router.get('/', (req, res) => {
     res.render('pages/home', {posts: db.getAll('posts')});
 });

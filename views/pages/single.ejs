@@ -1,8 +1,11 @@
 <%- include('../partials/header') %>
-<header>
-    <h1><%= post.title %></h1>
-</header>
-<div>
-    <%- post.content %>
-</div>
+<section class="singlePostSection">
+    <header>
+        <h1><%= post.title %></h1>
+    </header>
+    <div>
+        <%- post.content %>
+    </div>
+</section>
+
 <%- include('../partials/footer') %>
