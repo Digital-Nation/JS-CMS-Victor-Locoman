@@ -1,10 +1,4 @@
-# JS Track - Project CMS - Victor Locoman
-
-Pentru a instala dependențele (e nevoie doar la început):
-```
-npm install
-```
-
+# JS Track - Project CMS - Alex Palacean
 Pentru a porni proiectul:
 ```
 npm start

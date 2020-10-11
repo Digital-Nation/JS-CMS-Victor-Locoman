@@ -1,13 +1,16 @@
 <%- include('../partials/header') %>
-<header>
-    <h1>Welcome to my Blog 🎉</h1>
-</header>
-<div>
-    <% posts.forEach(post => { %>
-        <article>
-            <h2><a href="/posts/<%= post.slug %>"><%= post.title %></a></h2>
-            <p><%= post.content %></p>
-        </article>
-    <% }) %>
+
+
+<div class="content">
+    <div class="blogTitle">
+        <h2>⚠Welcome to my blog!</h2>
+        <hr>
+    </div>
+
+    <% for(let post of posts){ %>
+        <h3><a class="homePosts" href="/posts/<%= post.slug %>"><%= post.title %></a></h3>
+        <p><%= post.content %></p>
+    <%} %>
 </div>
+
 <%- include('../partials/footer') %>
