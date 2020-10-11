@@ -1,6 +1,7 @@
-# JS Track - Project CMS - Victor Locoman
+# JS Track - Project CMS - Alex Palacean
 
 Pentru a porni proiectul:
+
 ```
 npm start
 ```
