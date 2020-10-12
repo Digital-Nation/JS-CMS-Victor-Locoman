@@ -15,28 +15,30 @@ const getBy = (table, key, value) => { // read by key
     return item;
 };
 const get = (table, id) => { // read
+    // @todo: scrie funcționalitatea
     return getBy(table, 'id', id);
 };
-const set = (table, updatedItem) => { // update
-    const itemIndex = data[table].findIndex(dataItem => dataItem.id === updatedItem.id);
-    if (itemIndex === -1) {
-        if (counter <= updatedItemid) {
-            counter = updatedItemid + 1;
+const set = (table, id, updatedItem) => { // update
+    // @todo: scrie funcționalitatea
+      for (let i = 0; i < data[table].length; i++) {
+        let obj = data[table][i];
+        if (id.indexOf(obj.id) !== -1) {
+            data[table][i] = updatedItem
         }
-        data[table].push(updatedItem);
-        return updatedItem;
     }
-    const item = data[table][itemIndex];
-    return item;
 };
 const remove = (table, id) => { // delete
-    const itemIndex = data[table].findIndex(dataItem => dataItem.id === id);
-    delete data[table][itemIndex];
-    return itemIndex === -1 ? false : true;
+    // @todo: scrie funcționalitatea  
+    for (let i = 0; i < data[table].length; i++) {
+        let obj = data[table][i];
+        if (id.indexOf(obj.id) !== -1) {
+            data[table].splice(i, 1);
+        }
+    }
 };
 
 const getAll = (table) => {
-    return data[table].slice(); // întoarcem o copie al array-ului, ca să nu-l modifice cineva întâmplător
+    return data[table]; // întoarcem o copie al array-ului, ca să nu-l modifice cineva întâmplător
 };
 const removeAll = (table) => {
     data[table] = [];

@@ -3,12 +3,33 @@
     - afișează toate articolele cu opțiunea de a le edita / șterge
     - opțiunea de a adăuga un articol nou
 -->
-<style>
-    h1 {
-        font-weight: 900;
-    }
-</style>
-<script>
-    alert('Hello');
-</script>
-<h1>CMS</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+<script src="static.js" defer ></script>
+</head>
+<body>
+    
+<h1 class="title">CMS PANEL</h1>
+<hr>
+<button class="button-primary buttonNewPost">ADD A NEW POST</button>
+<form class="addNewPost" method="post" action="/admin/api/submit" >
+    <label for="title">Title</label>
+    <input type="text" name="title">
+    <label for="content">Content</label>
+    <input type="text" name="content">
+    <label></label>
+    <input type="submit" value="Submit">
+</form>
+<div class="posts">
+
+</div>
+</body>
+</html>
+
