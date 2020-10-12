@@ -1,4 +1,20 @@
 <%- include('../partials/header') %>
-<h2><%= posts[0].title %></h2>
-<p><%= posts[0].content %></p>
-<%- include('../partials/footer') %>
+    <header class="logo-text">
+        <h1> ✒️ nameBlog </h1>
+    </header>
+    <div>
+        <% posts.forEach(post => { %>
+            <article class="post">
+                <h2>
+                    <a class="post-title" href="/posts/<%=post.slug%>">
+                        <%= post.title %>
+                    </a>
+                </h2>
+                <div class="line-brake"></div>
+                <p class="post-content">
+                    <%= post.content %>
+                </p>
+            </article>
+            <% }) %>
+    </div>
+    <%- include('../partials/footer') %>

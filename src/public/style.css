@@ -1,3 +1,53 @@
-* {
-    box-sizing: border-box;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Pacifico&display=swap');
+    * {
+        box-sizing: border-box;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: #EA7773;
+    }
+    
+    body {
+        text-align: center;
+        background-color: #3C40C6;
+    }
+    
+    .logo-text {
+        font-family: 'Pacifico', cursive;
+        color: #EAF0F1;
+        margin-bottom: 10px;
+    }
+    
+    .post {
+        max-width: 500px;
+        padding: 25px 15px;
+        margin: 25px auto;
+        display: block;
+        box-shadow: 1px 1px 10px #EAF0F1;
+    }
+    
+    .post-title {
+        font-family: 'Bree Serif', serif;
+        color: #EAF0F1;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    
+    .post-content {
+        font-family: 'Bree Serif', serif;
+        color: #DAE0E2;
+        font-size: 1rem;
+    }
+    
+    .line-brake {
+        width: 250px;
+        height: 3px;
+        display: block;
+        background-color: #DAE0E2;
+        margin: -13px auto;
+        border-radius: 100%;
+    }

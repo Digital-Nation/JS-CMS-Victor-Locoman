@@ -1,0 +1,87 @@
+<header class="logo-text">
+    <h1> ✒️ nameBlog </h1>
+    <a href="/">
+        <svg version="1.1" id="Capa_1" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="459px" height="459px" viewBox="0 0 459 459" style="enable-background:new 0 0 459 459;" xml:space="preserve">
+            <g id="reply">
+                <path d="M178.5,140.25v-102L0,216.75l178.5,178.5V290.7c127.5,0,216.75,40.8,280.5,130.05C433.5,293.25,357,165.75,178.5,140.25z"
+                    />
+            </g>
+        </svg>
+    </a>
+</header>
+<div>
+    <article class="post">
+        <h2>
+            <span class="post-title" href="/posts/<%=post.slug%>">
+                <%= post.title %>
+            </span>
+        </h2>
+        <div class="line-brake"></div>
+        <p class="post-content">
+            <%= post.content %>
+        </p>
+    </article>
+</div>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Pacifico&display=swap');
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        text-align: center;
+        background-color: #3C40C6;
+    }
+    
+    .logo-text {
+        font-family: 'Pacifico', cursive;
+        color: #EAF0F1;
+        width: 100%;
+        margin: 10px auto;
+    }
+    
+    .post {
+        max-width: 500px;
+        padding: 25px 15px;
+        margin: 25px auto;
+        display: block;
+        box-shadow: 1px 1px 10px #EAF0F1;
+    }
+    
+    .post-title {
+        font-family: 'Bree Serif', serif;
+        color: #EAF0F1;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    
+    .post-content {
+        font-family: 'Bree Serif', serif;
+        color: #DAE0E2;
+        font-size: 1rem;
+    }
+    
+    .line-brake {
+        width: 250px;
+        height: 3px;
+        display: block;
+        background-color: #DAE0E2;
+        margin: -13px auto;
+        border-radius: 100%;
+    }
+    
+    #Capa_1 {
+        fill: #DAE0E2;
+        width: 55px;
+        height: 65px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+    
+    #Capa_1:hover {
+        fill: #FF362E;
+        cursor: pointer;
+    }
+</style>

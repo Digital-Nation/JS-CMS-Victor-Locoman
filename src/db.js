@@ -10,21 +10,40 @@ const add = (table, item) => { // create
     data[table].push(item);
     return item;
 };
-const get = (table, id) => { // read
-    // @todo: scrie funcționalitatea
+
+const getBy = (table, key, value) => { // read getBy('posts', 'slug', slug)
+    const item = data[table].find(dataItem => dataItem[key] === value);
+    return item;
 };
-const set = (table, id, updatedItem) => { // update
-    // @todo: scrie funcționalitatea
+
+const get = (table, id) => { // read
+    return getBy(table, 'id', id);
+};
+
+const set = (table, updatedItem) => { // update
+    const itemIndex = data[table].findIndex(dataItem => dataItem.id === updatedItem.id);
+    if (itemIndex === -1) {
+        if (counter <= updatedItem.id) {
+            counter = updatedItem.id + 1;
+        }
+        data[table].push(updatedItem);
+        return updatedItem;
+    }
+    const item = data[table][itemIndex];
+    return item;
+
 };
 const remove = (table, id) => { // delete
-    // @todo: scrie funcționalitatea
+    const itemIndex = data[table].findIndex(dataItem => dataItem.id === updateItem.id);
+    delete data[table][itemIndex];
+    return itemIndex === -1 ? false : true;
 };
 
 const getAll = (table) => {
-    return data[table]; // întoarcem o copie al array-ului, ca să nu-l modifice cineva întâmplător
+    return data[table].slice(); // întoarcem o copie al array-ului, ca să nu-l modifice cineva întâmplător
 };
 const removeAll = (table) => {
     data[table] = [];
 };
 
-module.exports = {add, get, set, remove, getAll, removeAll};
+module.exports = { add, getBy, get, set, remove, getAll, removeAll };
