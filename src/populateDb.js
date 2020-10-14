@@ -20,6 +20,7 @@ const populate = () => {
     db.add('posts', {
         title: '❓ My first blog post!!!',
         content: 'Well, it works. Welcome to my blog.',
+        slug: 'post-3'
     });
 };
 

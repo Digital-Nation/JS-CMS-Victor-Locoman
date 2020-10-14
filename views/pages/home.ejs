@@ -1,4 +1,13 @@
 <%- include('../partials/header') %>
-<h2><%= posts[0].title %></h2>
-<p><%= posts[0].content %></p>
+<header>
+    <h1>Welcome to my Blog 🎉</h1>
+</header>
+<div>
+    <% posts.forEach(post => { %>
+        <article>
+            <h2><a href="/posts/<%= post.slug %>"><%= post.title %></a></h2>
+            <p><%= post.content %></p>
+        </article>
+    <% }) %>
+</div>
 <%- include('../partials/footer') %>
