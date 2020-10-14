@@ -2,7 +2,7 @@
 
 Pentru a instala dependențele (e nevoie doar la început):
 ```
-npm install
+npm install -ulala
 ```
 
 Pentru a porni proiectul:
