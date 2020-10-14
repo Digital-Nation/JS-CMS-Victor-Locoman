@@ -2,6 +2,7 @@ const db = require('./db');
 
 // @todo: populează de aici baza de date cu mai multe intrări pentru a fi ușor de testat
 const populate = () => {
+
     db.add('posts', {
         title: '🚀 My first blog post!!!',
         content: `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus, erat quis porta euismod, quam justo blandit lectus, eu vulputate tortor felis sit amet magna. Phasellus porta orci vel mollis posuere. Donec vitae ullamcorper est, at interdum nisi. Etiam massa quam, pellentesque vel blandit non, laoreet sed urna. Donec fermentum nulla libero, ac viverra erat interdum vitae. Vivamus vulputate nec ex a fringilla. Suspendisse potenti. Sed finibus, nibh nec blandit rutrum, purus massa ornare dui, a scelerisque mauris sapien quis tortor.
@@ -22,6 +23,7 @@ const populate = () => {
         content: 'Well, it works. Welcome to my blog.',
         slug: 'post-3'
     });
+
 };
 
-module.exports = populate
+module.exports = populate;
