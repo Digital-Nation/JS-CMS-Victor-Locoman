@@ -1,6 +1,6 @@
 # JS Track - Project CMS - Cornel Mihaescu -Forked
 
-Pentru a instala dependențele (e nevoie doar la început):
+Pentru a instala dependențele (e nevoie doar la începutvrrrrrrrr):
 ```
 npm install -ulala
 ```
