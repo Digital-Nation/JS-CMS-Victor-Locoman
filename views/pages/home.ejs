@@ -5,15 +5,16 @@
     <div>
         <% posts.forEach(post => { %>
             <article class="post">
-                <h2>
-                    <a class="post-title" href="/posts/<%=post.slug%>">
-                        <%= post.title %>
-                    </a>
+                <h2 class="post-title">
+                    <%= post.title %>
                 </h2>
                 <div class="line-brake"></div>
                 <p class="post-content">
                     <%= post.content %>
                 </p>
+                <a class="read-more" href="/posts/<%=post.slug%>">
+                    read more about this ... ►
+                </a>
             </article>
             <% }) %>
     </div>

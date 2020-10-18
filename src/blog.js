@@ -3,7 +3,6 @@ const db = require('./db');
 
 const router = express.Router();
 
-// @todo: completează cu toate rutele necesare
 router.get('/', (req, res) => {
     res.render('pages/home', { posts: db.getAll('posts') });
 });
@@ -14,7 +13,9 @@ router.get('/posts/:slug', (req, res) => {
     if (post) {
         res.render('pages/single', { post });
     } else {
-        res.render('pages/notFound', {});
+        res.render('pages/notFound', {
+
+        });
     }
 })
 

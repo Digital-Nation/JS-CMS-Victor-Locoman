@@ -14,6 +14,7 @@
     body {
         text-align: center;
         background-color: #3C40C6;
+        cursor: context-menu;
     }
     
     .logo-text {
@@ -23,8 +24,8 @@
     }
     
     .post {
-        max-width: 500px;
-        padding: 25px 15px;
+        max-width: 900px;
+        padding: 10px 15px;
         margin: 25px auto;
         display: block;
         box-shadow: 1px 1px 10px #EAF0F1;
@@ -35,6 +36,7 @@
         color: #EAF0F1;
         font-weight: 500;
         font-size: 2rem;
+        margin-top: -5px;
     }
     
     .post-content {
@@ -50,4 +52,14 @@
         background-color: #DAE0E2;
         margin: -13px auto;
         border-radius: 100%;
+    }
+    
+    .click-icon {
+        width: 15px;
+    }
+    
+    .read-more {
+        font-family: 'Bree Serif', serif;
+        color: #DAE0E2;
+        font-size: 2rem;
     }

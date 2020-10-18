@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="style-single-page.css">
+
 <header class="logo-text">
     <h1> ✒️ nameBlog </h1>
     <a href="/">
@@ -16,12 +18,46 @@
                 <%= post.title %>
             </span>
         </h2>
+
         <div class="line-brake"></div>
+
         <p class="post-content">
             <%= post.content %>
         </p>
+
+        <br>
+
+        <div class="image-blog">
+            <img src="<%=post.imageUrl%>" alt="image-blog">
+        </div>
+
+        <p class="post-content">
+            <%= post.contentAfterReadMore %>
+        </p>
     </article>
+
+    <div id="author">
+        <img src="<%=post.authorAvatar%>" alt="avatar-icon" class="avatar-icon">
+        <div class="author-details">
+            <i class="fa fa-user" aria-hidden="true"></i> Author -
+            <%= post.authorName %>
+                <p class="margin-fix-for-date-post">
+                    <i class="fa fa-calendar" aria-hidden="true"></i> Date -
+                    <%= post.datePost %>
+                </p>
+                <p class="margin-fix-for-date-post-2">
+                    <i class="fa fa-puzzle-piece" aria-hidden="true"></i> Category -
+                    <%= post.category %>
+                </p>
+        </div>
+    </div>
 </div>
+
+<section class="bottom">
+    <span class="made-by">Made with <i class="fa fa-heart animated infinite pulse"></i> by <a target="_blank" href="https://www.linkedin.com/in/ilieionut">Ilie Gheorghe Ionuț</a> with help from <a target="_blank" href="https://digitalnation.ro/">digitalnation.ro</a>
+</section>
+
+<script src="https://kit.fontawesome.com/b6f9cf9709.js" crossorigin="anonymous"></script>
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Pacifico&display=swap');
@@ -32,6 +68,41 @@
     body {
         text-align: center;
         background-color: #3C40C6;
+        cursor: context-menu;
+    }
+    .fa-user, .fa-puzzle-piece, .fa-calendar {
+        font-size: 13px;
+        color: #ef5350;
+    } 
+    #author {
+        width: 400px;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    
+    #author img {
+        width: 60px;
+        height: 60px;
+        margin-right: 25px;
+    }
+    
+    .author-details {
+        text-align: left;
+        font-family: 'Bree Serif', serif;
+        color: #EAF0F1;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .margin-fix-for-date-post {
+        margin-top: -2px;
+        display: block;
+    }
+    
+    .margin-fix-for-date-post-2 {
+        margin-top: -18.5px;
+        display: block;
     }
     
     .logo-text {
@@ -42,9 +113,9 @@
     }
     
     .post {
-        max-width: 500px;
-        padding: 25px 15px;
-        margin: 25px auto;
+        max-width: 700px;
+        padding: 10px 15px;
+        margin: 15px auto;
         display: block;
         box-shadow: 1px 1px 10px #EAF0F1;
     }
@@ -73,15 +144,51 @@
     
     #Capa_1 {
         fill: #DAE0E2;
-        width: 55px;
+        width: 545px;
         height: 65px;
         position: absolute;
-        left: 10px;
-        top: 10px;
+        left: 176px;
+        top: 256px
     }
     
     #Capa_1:hover {
-        fill: #FF362E;
+        fill: #EA7773;
         cursor: pointer;
+    }
+    
+    .image-blog img {
+        max-width: 100%;
+    }
+    
+    .image-blog {
+        background-color: red;
+        display: block;
+        max-width: 500px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .bottom {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    position: fixed;
+    bottom: 0;
+    }
+    .made-by {
+    color: #f5f6fa;
+    margin: 0 auto;
+    text-align: center;
+    }
+    .made-by a {
+    color: #f5f6fa;
+    text-decoration: none;
+    }
+    .made-by a:hover {
+    text-decoration: underline;
+    color: #ef5350;
+    }
+    .fa-heart {
+    color: #ef5350;
     }
 </style>

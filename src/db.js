@@ -1,26 +1,25 @@
-// vom stoca datele în memorie, prin obiectul local data
-// pentru a interacționa cu acest obiect, vom crea metodele CRUD
 const data = {
     posts: [],
 };
+
 let counter = 0;
 
-const add = (table, item) => { // create
+const add = (table, item) => {
     item.id = counter++;
     data[table].push(item);
     return item;
 };
 
-const getBy = (table, key, value) => { // read getBy('posts', 'slug', slug)
+const getBy = (table, key, value) => {
     const item = data[table].find(dataItem => dataItem[key] === value);
     return item;
 };
 
-const get = (table, id) => { // read
+const get = (table, id) => {
     return getBy(table, 'id', id);
 };
 
-const set = (table, updatedItem) => { // update
+const set = (table, updatedItem) => {
     const itemIndex = data[table].findIndex(dataItem => dataItem.id === updatedItem.id);
     if (itemIndex === -1) {
         if (counter <= updatedItem.id) {
@@ -29,19 +28,21 @@ const set = (table, updatedItem) => { // update
         data[table].push(updatedItem);
         return updatedItem;
     }
+
     const item = data[table][itemIndex];
     return item;
-
 };
-const remove = (table, id) => { // delete
+
+const remove = (table, id) => {
     const itemIndex = data[table].findIndex(dataItem => dataItem.id === updateItem.id);
     delete data[table][itemIndex];
     return itemIndex === -1 ? false : true;
 };
 
 const getAll = (table) => {
-    return data[table].slice(); // întoarcem o copie al array-ului, ca să nu-l modifice cineva întâmplător
+    return data[table].slice();
 };
+
 const removeAll = (table) => {
     data[table] = [];
 };
