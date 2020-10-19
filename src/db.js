@@ -51,3 +51,4 @@ const removeAll = (table) => {
 };
 
 module.exports = { add, getBy, get, set, remove, getAll, removeAll };
+

@@ -18,3 +18,4 @@ router.get('/posts/:slug', (req, res) => {
 });
 
 module.exports = router;
+
