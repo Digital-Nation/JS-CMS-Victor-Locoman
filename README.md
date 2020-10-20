@@ -1,4 +1,4 @@
-# JS Track - Project CMS - Victor Locoman
+# JS Track - Project CMS - Victor Locoman - Tudor
 
 Pentru a instala dependențele (e nevoie doar la început):
 ```
