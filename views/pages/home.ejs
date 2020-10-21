@@ -1,5 +1,8 @@
+<!-- @todo: De făcut să arate frumos💄! -->
+<!-- @todo: De completat cu informații! -->
 <%- include('../partials/header') %>
 <header>
+<<<<<<< HEAD
     <h1> Welcome to my blog!</h1>
 </header>
 <div>
@@ -14,3 +17,16 @@
 </div>
 
 <%- include('../partials/footer') %>
+=======
+    <h1>Welcome to my Blog 🎉</h1>
+</header>
+<div>
+    <% posts.forEach(post => { %>
+    <article>
+        <h2><a href="/posts/<%= post.slug %>"><%= post.title %></a></h2>
+        <p><%= post.content %></p>
+    </article>
+    <% }) %>
+</div>
+<%- include('../partials/footer') %>
+>>>>>>> acb948e66331317a3d2ef953e01b8ce46f476e3a

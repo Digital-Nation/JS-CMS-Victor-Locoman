@@ -1,5 +1,10 @@
 # JS Track - Project CMS - Cornel Mihaescu
 
+Pentru a instala dependențele (e nevoie doar la început):
+```
+npm install
+```
+
 Pentru a porni proiectul:
 ```
 npm start

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const express = require('express');
 const db = require('../db');
 
@@ -11,6 +12,14 @@ const router = express.Router();
 
 router.get('/posts', (req, res) => {
     res.render('pages/home', {posts: db.getAll('posts')});
+=======
+const express = require("express");
+
+const router = express.Router();
+
+router.get("/posts", (req, res) => {
+  res.send(db.getAll("posts"));
+>>>>>>> acb948e66331317a3d2ef953e01b8ce46f476e3a
 });
 
 //http://localhost:3000/admin/api/posts ^^
