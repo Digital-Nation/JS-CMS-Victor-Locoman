@@ -1,7 +1,11 @@
 <<<<<<< HEAD
 const express = require('express');
+<<<<<<< HEAD
 const db = require('../db');
 
+=======
+const db =require('../db');
+>>>>>>> 5b039ec37af6d3d64b64c3a4d04a30ef3b76d37c
 
 const router = express.Router();
 
@@ -11,6 +15,7 @@ const router = express.Router();
 // GET ALL POSTS
 
 router.get('/posts', (req, res) => {
+<<<<<<< HEAD
     res.render('pages/home', {posts: db.getAll('posts')});
 =======
 const express = require("express");
@@ -20,6 +25,9 @@ const router = express.Router();
 router.get("/posts", (req, res) => {
   res.send(db.getAll("posts"));
 >>>>>>> acb948e66331317a3d2ef953e01b8ce46f476e3a
+=======
+    res.send(db.getAll('posts')); // @todo: de întors articolele din baza de date
+>>>>>>> 5b039ec37af6d3d64b64c3a4d04a30ef3b76d37c
 });
 
 //http://localhost:3000/admin/api/posts ^^
