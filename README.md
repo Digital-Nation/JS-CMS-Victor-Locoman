@@ -1,4 +1,4 @@
-# JS Track - Project CMS - Victor Locoman
+# JS Track - Project CMS - Cornel Mihaescu
 
 Pentru a porni proiectul:
 ```

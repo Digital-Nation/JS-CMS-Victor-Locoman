@@ -1,0 +1,13 @@
+<%- include('../partials/header') %>
+<header>
+    <h1> <%= post.title %></h1>
+</header>
+<div>
+    <p><%= post.content %></p>
+    <a href="../admin/api/delete/<%= post.slug %>">Delete Post</a>
+    <a href="../admin/api/edit/<%= post.slug %>">Edit Post</a><br>
+    <a href="/admin/api/posts"> Go back to Home</a>
+
+</div>
+
+<%- include('../partials/footer') %>

@@ -1,0 +1,26 @@
+<%- include('../partials/header') %>
+<header>
+    <title>Create Post</title>
+</header>
+<div contenteditable="true">
+    <ul>
+        <li>
+            Post title: <br><input type="text" name="title" placeholder="Your Post Title">
+        </li>
+        <li>
+            Post content: <br><textarea name="message" placeholder="Your Post content"></textarea>
+        </li>
+        <li>
+            Post slug: <br><input type="text" name="slug" placeholder="Your Post identifier"> 
+        </li>
+    </ul>
+    
+
+</div>
+<button type="button" id="submit-post-button">Submit Post</button>
+<br>
+<br>
+<a href="/admin/api/posts"> Go back to Home</a>
+
+
+<%- include('../partials/footer') %>

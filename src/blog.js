@@ -8,4 +8,20 @@ router.get('/', (req, res) => {
     res.render('pages/home', {posts: db.getAll('posts')});
 });
 
+router.get('/posts/:slug', (req, res) => {
+
+    const slug = req.params.slug
+    const post = db.getBy('posts','slug', slug);
+    if(post){
+        res.render('pages/single', {post: post});
+    } else {
+        res.render('pages/notFound', {})
+    }
+    
+});
+
+router.get('/aboutUs', (req, res)=>{
+    res.render('pages/aboutUs', {});
+})
+
 module.exports = router;
