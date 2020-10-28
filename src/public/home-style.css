@@ -1,0 +1,142 @@
+body{
+    color: #fff;
+}
+.home-menu {
+    text-align: center;
+    display: block;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.855);
+    padding: 2%;
+}
+
+.menu-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    margin: auto;
+}
+
+.menu-item a:link, .menu-item a:visited {
+    text-decoration: none;
+    font-weight: 400;
+    color: #000;
+    transition: font-size 0.2s;
+}
+
+.menu-item a:hover, .menu-item a:active {
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+h1 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    padding: 10% 0% 6% 0%;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: #ddd;
+    letter-spacing: 1rem;
+}
+
+.h1-div {
+    background-image: url(img/background-photo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+article, .links-column {
+    padding: 4% 4% 0% 4%;
+    display: flex;
+    flex-flow: column wrap;
+   }
+
+.pading-bottom,.pading-top {
+    background-color: #000;
+}
+
+.pading-top p {
+    padding-bottom: 5%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
+    
+}
+
+.pading-bottom p {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1));
+    padding-bottom: 5%;
+}
+
+article h2 {
+    font-weight: 500;
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+
+h3 {
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+article h2 a:link,
+article h2 a:visited {
+    text-decoration: none;
+    color: #ddd;
+    font-weight: 300;
+    letter-spacing: 0.5rem;
+}
+
+article h2 a:hover,
+article h2 a:active {
+    letter-spacing: 0.75rem;
+    color: #fff;
+    transition: color, letter-spacing 0.5s;
+}
+
+article p {
+    text-align: justify;
+    text-justify: inter-word;
+    word-wrap: break-word;
+}
+
+.background-image {
+    background-image: url(img/background-photo-3.jpg);
+    background-size: cover;
+    background-position: center;    
+}
+
+.main {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), 90%, rgba(0, 0, 0, 1)),
+                linear-gradient(to top, rgba(0, 0, 0, 0.1), 90%, rgba(0, 0, 0, 1));
+    display: grid;
+    grid-template-columns: 66% auto;
+}
+
+.column-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(10%, 15%));
+}
+
+.table-of-articles,
+.links-to-other {
+    padding: 30% 2% 0 3%;
+}
+
+.table-of-articles li,
+.links-to-other li {
+    padding-bottom:10px;
+}
+
+.table-of-articles a,
+.links-to-other a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+.table-of-articles a:hover,
+.links-to-other a:hover {
+    color: #fff;
+    font-size: 1.1rem;
+    transition: font-size 0.5s, color 0.2s;
+}

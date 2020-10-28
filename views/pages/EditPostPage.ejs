@@ -1,23 +1,32 @@
 <%- include('../partials/header') %>
+<link rel='stylesheet' href='/style-other-pages.css'/> 
+</head>
+<body>
 <header>
     <title>Edit Post</title>
 </header>
-<div contenteditable="true">
-    <ul>
-        <li>
-            Edit post title: <br><input type="text" name="title" value='<%= post.title %>'>
-        </li>
-        <li>
-            Edit post content: <br><textarea name="message"><%= post.content %></textarea>
-        </li>
-    </ul>
-    
-
+<div class="background-image">
+<div class="container">
+    <form action="http://localhost:3000/admin/api/edit/<%= post.id %>" method="POST">
+        <ul class="elements">
+            <li>
+                Edit post title: <br><input type="text" id="title" name="title" value='<%= post.title %>'>
+            </li>
+            <li>
+                Edit post content: <br><textarea id="content" name="content"><%= post.content %></textarea>
+            </li>
+            <li>ID: <%= post.id %></li>
+        </ul>
+    <button type="submit" id="submit-post-button">Submit edited Post</button>
+    </form>
+    <div class="go-back-home">
+        <a href="/"> Go back to Home</a>
+    </div>
 </div>
-<button type="button" id="submit-post-button">Submit Post</button>
-<br>
-<br>
-<a href="/admin/api/posts"> Go back to Home</a>
+</div>
+<div class="pading-bottom">
+    <p></p> 
+</div> 
 
 
 <%- include('../partials/footer') %>

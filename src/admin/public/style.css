@@ -32,15 +32,19 @@ h1 {
 	width: 10%;
 	color: #FF7400;
 	font-weight: 600;
+	text-decoration: none;
 }
 
 .container-post {
 	margin: auto;
+	padding-bottom: 5%;
 	width: 75%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-flow: column wrap ;
+    max-height: 400px;
+    overflow: auto;
 }
 
 .post {
@@ -53,6 +57,7 @@ h1 {
 
 .edit-and-delete-container {
 	padding-top: 2%;
+	padding-bottom: 5%;
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
@@ -69,4 +74,8 @@ h1 {
 
 .edit-post {
 	padding-right: 2%;
+}
+
+footer {
+	height: 8vh;
 }

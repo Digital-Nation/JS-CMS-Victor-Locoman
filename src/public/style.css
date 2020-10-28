@@ -1,11 +1,16 @@
-* {
+* { 
+    margin: 0;
+    padding:0;
     box-sizing: border-box;
-<<<<<<< HEAD
-    
-=======
 }
 
-body {
-    text-align: center;
->>>>>>> acb948e66331317a3d2ef953e01b8ce46f476e3a
+html,
+body{
+    background-color:#fff;
+    color: #888;
+    font-family: 'Exo', "arial", sans-serif;
+    font-weight: 300;
+    font-size:20px;
+    text-rendering:optimizeLegibility;
+    overflow-x: hidden;
 }

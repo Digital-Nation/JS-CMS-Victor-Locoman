@@ -1,32 +1,61 @@
 <!-- @todo: De făcut să arate frumos💄! -->
 <!-- @todo: De completat cu informații! -->
 <%- include('../partials/header') %>
+<link rel='stylesheet' href='/home-style.css'/> 
+</head>
+<body>
 <header>
-<<<<<<< HEAD
-    <h1> Welcome to my blog!</h1>
+    <div class="home-menu">
+        <ul class="menu-list">
+            <li class="menu-item"><a href="/"> Home </a></li>
+            <li class="menu-item"><a href="admin/api/CreatePostPage"> Create New Post</a></li>
+            <li class="menu-item"><a href="admin/api/deleteAll"> Delete All Posts</a></li>
+            <li class="menu-item"><a href="admin/"> Go to static blog </a></li>
+        </ul>
+    </div>
+    <div class="h1-div">
+         <h1> Welcome to my Space blog!</h1>
+    </div>
 </header>
-<div>
-    <% posts.forEach(post => { %>
-        <article>
-            <h2><a href="/posts/<%= post.slug %>"> <%= post.title %></a></h2>
-            <p><%= post.content %></p>
-        </article>
-        <% }) %>
-    <a href="../api/CreatePostPage"> Create New Post</a><br>
-    <a href="../api/deleteAll"> Delete All Posts</a>
+    <div class="pading-top">
+        <p></p>
+    </div>  
+    <div class="background-image">
+    <div class="main">
+        <div class="column-articles">
+        <% posts.forEach(post => { %>
+            <article>
+                <h2 id="<% post.id %>"><a href="/posts/<%= post.slug %>"> <%= post.title %></a></h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%= post.content %></p>
+            </article>
+            <% })
+            %>
+        </div>
+        <div class="column-links">
+            <ul class="table-of-articles">
+            <h3>Links to Articles</h3>
+                <% posts.forEach(post => { %>
+                <li id="scrollTo<% post.id %>"><a href="/posts/<%= post.slug %>"><%= post.title %></a></li>
+                <% }); 
+                 %>
+            </ul>
+            <ul class="links-to-other">
+            <h3>Links to other Blogs and interesting resources</h3>
+                <li><a href=""> www.randomlink.com</a></li>
+                <li><a href="">www.someotherrandomlink.com</a></li>
+                <li><a href="">www.anotherrandomlink.com</a></li>
+                <li><a href="">www.linkrandomlink.com</a></li>
+                <li><a href="">www.randomlink.com</a></li>
+                <li><a href="">www.someotherrandomlink.com</a></li>
+                <li><a href="">www.anotherrandomlink.com</a></li>
+                <li><a href="">www.linkrandomlink.com</a></li>
+            </ul>
+        </div>
+    </div>
+    </div> 
+    <div class="pading-bottom">
+        <p></p> 
+    </div> 
 </div>
 
 <%- include('../partials/footer') %>
-=======
-    <h1>Welcome to my Blog 🎉</h1>
-</header>
-<div>
-    <% posts.forEach(post => { %>
-    <article>
-        <h2><a href="/posts/<%= post.slug %>"><%= post.title %></a></h2>
-        <p><%= post.content %></p>
-    </article>
-    <% }) %>
-</div>
-<%- include('../partials/footer') %>
->>>>>>> acb948e66331317a3d2ef953e01b8ce46f476e3a

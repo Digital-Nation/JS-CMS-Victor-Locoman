@@ -1,25 +1,20 @@
-<<<<<<< HEAD
 <%- include('../partials/header') %>
-<header>
-    <h1> <%= post.title %></h1>
-</header>
-<div>
-    <p><%= post.content %></p>
-    <a href="../admin/api/delete/<%= post.slug %>">Delete Post</a>
-    <a href="../admin/api/edit/<%= post.slug %>">Edit Post</a><br>
-    <a href="/admin/api/posts"> Go back to Home</a>
-
+<link rel='stylesheet' href='/style-single.css'/> 
+</head>
+<body>
+<div class="background-image">
+<div class="container">
+    <header>
+        <h1> <%= post.title %></h1>
+        <p><%= post.content %></p>
+    </header>
+    <div class="links">
+        <a href="../admin/api/edit/<%= post.id %>">Edit Post</a>
+        <a href="../admin/api/delete/<%= post.id %>">Delete Post</a>
+        <a href="/"> Go back to Home</a>
+    
+    </div>
+</div>
 </div>
 
 <%- include('../partials/footer') %>
-=======
-<!-- @todo: De completat cu informații! -->
-<%- include('../partials/header') %>
-<header>
-    <h1><%= post.title %></h1>
-</header>
-<div>
-    <%- post.content %>
-</div>
-<%- include('../partials/footer') %>
->>>>>>> acb948e66331317a3d2ef953e01b8ce46f476e3a

@@ -1,0 +1,82 @@
+* { 
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    background-color:#fff;
+    color: #ddd;
+    font-family: 'Exo', "arial", sans-serif;
+    font-weight: 300;
+    font-size:20px;
+    text-rendering:optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.background-image{
+    background-image: url(img/background-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+.container {
+    padding-top: 15%;
+    padding-left: 5%;
+    display: flex;
+    text-align: center;
+    flex-flow: column wrap;
+    height: 90vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.pading-bottom p {
+    background-color:#000;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1));
+    padding-bottom: 5%;
+}
+
+.elements li {
+    text-decoration: none;
+    list-style-type: none;
+    padding-bottom: 1%;
+}
+
+#title, 
+#content,
+#slug {
+    padding-top: 1%;
+    width: 40%;
+}
+
+#content{
+    height: 20vh;
+}
+
+#submit-post-button {
+    padding: 1% 2%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#submit-post-button:hover {
+    font-size: 1.1rem;
+    transition: font-size 0.2s;
+}
+.go-back-home{
+    display: block;
+}
+.go-back-home {
+    font-weight: 600;
+    text-decoration: none;
+    color: #ddd;
+    padding-right: 2%;
+}
+
+.go-back-home:hover {
+    color: #fff;
+    font-size: 1.1rem;
+    transition: font-size 0.5s, color 0.2s;
+}
