@@ -115,7 +115,12 @@ article p {
 .column-links {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(10%, 15%));
+    grid-template-rows: repeat(auto-fit, minmax(1fr, 1fr));
+
+    /* display: flex;
+    flex-flow: column wrap; 
+    DE CE CAND IL BAGA IN URMATORUL RAND MI-L DA FOARTE JOS
+    */
 }
 
 .table-of-articles,

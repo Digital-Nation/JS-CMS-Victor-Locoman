@@ -1,6 +1,7 @@
 <!-- @todo: De făcut să arate frumos💄! -->
 <!-- @todo: De completat cu informații! -->
 <%- include('../partials/header') %>
+<script defer type="module" src="home.js"></script>
 <link rel='stylesheet' href='/home-style.css'/> 
 </head>
 <body>
@@ -25,7 +26,7 @@
         <div class="column-articles">
         <% posts.forEach(post => { %>
             <article>
-                <h2 id="<% post.id %>"><a href="/posts/<%= post.slug %>"> <%= post.title %></a></h2>
+                <h2 id=<%= post.id %>><a href="/posts/<%= post.slug %>"> <%= post.title %></a></h2>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%= post.content %></p>
             </article>
             <% })
@@ -35,20 +36,20 @@
             <ul class="table-of-articles">
             <h3>Links to Articles</h3>
                 <% posts.forEach(post => { %>
-                <li id="scrollTo<% post.id %>"><a href="/posts/<%= post.slug %>"><%= post.title %></a></li>
+                <li id=<%='scrollTo'+ post.id %>><a href="/posts/<%= post.slug %>"><%= post.title %></a></li>
                 <% }); 
                  %>
             </ul>
             <ul class="links-to-other">
-            <h3>Links to other Blogs and interesting resources</h3>
-                <li><a href=""> www.randomlink.com</a></li>
-                <li><a href="">www.someotherrandomlink.com</a></li>
-                <li><a href="">www.anotherrandomlink.com</a></li>
-                <li><a href="">www.linkrandomlink.com</a></li>
-                <li><a href="">www.randomlink.com</a></li>
-                <li><a href="">www.someotherrandomlink.com</a></li>
-                <li><a href="">www.anotherrandomlink.com</a></li>
-                <li><a href="">www.linkrandomlink.com</a></li>
+            <h3 title="These are purely decorative">Links to other Blogs and interesting resources</h3>
+                <li title="This is purely decorative"><a href=""> www.randomlink.com</a></li>
+                <li title="This is purely decorative"><a href="">www.someotherrandomlink.com</a></li>
+                <li title="This is purely decorative"><a href="">www.anotherrandomlink.com</a></li>
+                <li title="This is purely decorative"><a href="">www.linkrandomlink.com</a></li>
+                <li title="This is purely decorative"><a href="">www.randomlink.com</a></li>
+                <li title="This is purely decorative"><a href="">www.someotherrandomlink.com</a></li>
+                <li title="This is purely decorative"><a href="">www.anotherrandomlink.com</a></li>
+                <li title="This is purely decorative"><a href="">www.linkrandomlink.com</a></li>
             </ul>
         </div>
     </div>
