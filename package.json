@@ -1,7 +1,6 @@
 {
   "name": "cms",
   "version": "0.0.1",
-  "description": "",
   "main": "src/server",
   "scripts": {
     "start": "nodemon"
@@ -15,6 +14,12 @@
   "dependencies": {
     "ejs": "^3.1.5",
     "express": "^4.17.1",
+    "modules": "^0.4.0",
     "nodemon": "^2.0.4"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/Digital-Nation/JS-CMS-Victor-Locoman/issues"
+  },
+  "homepage": "https://github.com/Digital-Nation/JS-CMS-Victor-Locoman#readme",
+  "description": ""
 }
